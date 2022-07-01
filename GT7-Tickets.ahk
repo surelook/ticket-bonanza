@@ -29,14 +29,14 @@ Global script_start := A_TickCount
 Global color_4star := 0xCBCBCB
 Global color_menu := 0x6A5928
 Global color_cursor := 0xB5B5B5
-Global pos_4starX := 87
-Global pos_4starY := 76
-Global pos_menuX := 340
-Global pos_menuY := 51
+Global pos_4starX := 62
+Global pos_4starY := 77
+Global pos_menuX := 334
+Global pos_menuY := 48
 Global pos_cursor_cafeX := 643
-Global pos_cursor_cafeY := 370
-Global pos_cursor_garageX := 855
-Global pos_cursor_garageY := 388
+Global pos_cursor_cafeY := 383
+Global pos_cursor_garageX := 865
+Global pos_cursor_garageY := 404
 
 ; Menu
 Menu, tray, Tip, Ticket Bonanza
@@ -240,7 +240,7 @@ Loop, %remotePlay_id%
 	If InStr(title, "PS Remote Play")
 	break
 }
-WinMove, ahk_id %id%,,,, 1280, 720  
+WinMove, ahk_id %id%,,,, 1280, 750
 ControlFocus,, ahk_class %remotePlay_class%
 WinActivate, ahk_id %id%
 return
