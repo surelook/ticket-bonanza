@@ -26,13 +26,13 @@ DetectHiddenWindows, Off
 
 Global controller := new ViGEmDS4()
 Global script_start := A_TickCount
-Global color_4star := 0xC7C7C7
-Global color_menu := 0x6C5826
+Global color_4star := 0xCBCBCB
+Global color_menu := 0x6A5928
 Global color_cursor := 0xB5B5B5
 Global pos_4starX := 63
-Global pos_4starY := 244
-Global pos_menuX := 334
-Global pos_menuY := 222
+Global pos_4starY := 214
+Global pos_menuX := 336
+Global pos_menuY := 191
 Global pos_cursor_cafeX := 644
 Global pos_cursor_cafeY := 524
 Global pos_cursor_garageX := 867
