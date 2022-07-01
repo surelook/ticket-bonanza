@@ -60,6 +60,7 @@ ButtonTickets:
 gosub, GrabRemotePlay
 Sleep(500)
 loop {
+CheckCursor(pos_cursor_cafeX, pos_cursor_cafeY)
 Press_X()
 CheckMenu(pos_menuX, pos_menuY)
 CheckCursor(pos_cursor_trophiesX, pos_cursor_trophiesY)
@@ -157,7 +158,6 @@ Press_O()
 CheckMenu(pos_menuX, pos_menuY)
 CheckCursor(pos_cursor_garageX, pos_cursor_garageY)
 Press_Left()
-Sleep(1000)
 }
 Return
 
@@ -206,7 +206,6 @@ CheckMenu(x,y, b_size := 1)
 
 CheckCursor(x,y, b_size := 1)
 {	
-    Sleep(500)
     CursorComplete := false
     loop 
 	{
