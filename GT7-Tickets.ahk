@@ -103,7 +103,6 @@ Sleep(50)
 Press_O()
 CheckMenu(pos_menuX, pos_menuY)
 CheckCursor(pos_cursor_garageX, pos_cursor_garageY)
-Sleep(400)
 Press_Left()
 Sleep(50)
 Press_X()
@@ -132,7 +131,6 @@ Press_O()
 Sleep(3000)
 CheckMenu(pos_menuX, pos_menuY)
 CheckCursor(pos_cursor_cafeX, pos_cursor_cafeY)
-Sleep(400)
 Press_Right()
 Press_X()
 CheckMenu(pos_menuX, pos_menuY)
@@ -156,7 +154,6 @@ Sleep(50)
 Press_O()
 CheckMenu(pos_menuX, pos_menuY)
 CheckCursor(pos_cursor_garageX, pos_cursor_garageY)
-Sleep(400)
 Press_Left()
 Sleep(1000)
 }
@@ -222,7 +219,6 @@ CheckCursor(x,y, b_size := 1)
 			}
 		}
     } until CursorComplete = true
-	Sleep(500)
     return
 }
 
