@@ -29,24 +29,29 @@ Global script_start := A_TickCount
 Global color_4star := 0xCBCBCB
 Global color_menu := 0x6A5928
 Global color_cursor := 0xB5B5B5
-Global pos_4starX := 63
-Global pos_4starY := 214
-Global pos_menuX := 336
-Global pos_menuY := 191
-Global pos_cursor_cafeX := 644
-Global pos_cursor_cafeY := 524
-Global pos_cursor_garageX := 867
-Global pos_cursor_garageY := 538
+Global pos_4starX := 87
+Global pos_4starY := 76
+Global pos_menuX := 340
+Global pos_menuY := 51
+Global pos_cursor_cafeX := 643
+Global pos_cursor_cafeY := 370
+Global pos_cursor_garageX := 855
+Global pos_cursor_garageY := 388
 
-;- GUI 1 (MAIN) -------------------------------------------------------------------------------------------------
-Icon = %A_ScriptDir%\Assets\GT7_Tokyo.ico
-Menu, Tray, Icon, %Icon%
-Gui, -Caption
-Gui, Add, Picture, x0 y0, %A_ScriptDir%\Assets\LEA_gui.png
-Gui, Add, Button, x278 y120 w80 h50 default gButtonTickets, Tickets
-Gui, Add, Button, x278 y195 w80 h20 default gGUIReset, Reset
-Gui, Add, Button, x531 y195 w101 h20 default gGUIClose, Exit
-Gui, Show, x1274 y791 h225 w640, GT7 LEA // by problemz
+; Menu
+Menu, tray, Tip, Ticket Bonanza
+
+; GUI
+Gui, New, -MaximizeBox -Resize, Ticket Bonanza
+Gui, Margin, 10, 10
+Gui, Font, S10 c000000
+; GUI: Credits
+Gui, Add, Link, x5 y5 w300, <a href="https://discord.gg/CfppVp7VXV">Join our Discord server</a>
+; GUI: Buttons
+Gui, Add, Button, x12 w150 h40 Default gButtonTickets, Start
+Gui, Add, Button, w150 h40 x+10 gGUIReset, Reset
+Gui, Add, Button, w150 h40 x+10 gGUIClose, Exit
+Gui, Show
 Return
 
 ButtonTickets:
@@ -235,8 +240,7 @@ Loop, %remotePlay_id%
 	If InStr(title, "PS Remote Play")
 	break
 }
-WinMove, ahk_id %id%,, 0, 0, 1280, 1024 
-WinMove, GT7 LEA // by problemz,, 1274, 791 
+WinMove, ahk_id %id%,,,, 1280, 720  
 ControlFocus,, ahk_class %remotePlay_class%
 WinActivate, ahk_id %id%
 return
