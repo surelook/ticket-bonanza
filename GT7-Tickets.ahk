@@ -64,7 +64,7 @@ Sleep(500)
 loop {
 	CheckCursor(pos_cursor_cafeX, pos_cursor_cafeY)
 	Press_X()
-	CheckMenu(pos_menuX, pos_menuY)
+	Sleep(3000)
 	CheckCursor(pos_cursor_trophiesX, pos_cursor_trophiesY)
 	Press_Left()
 	Press_X()	
@@ -83,11 +83,10 @@ loop {
 	Sleep(200)
 	Press_O()
 	Sleep(3000)
-	CheckMenu(pos_menuX, pos_menuY)
 	CheckCursor(pos_cursor_cafeX, pos_cursor_cafeY)
 	Press_Right()
 	Press_X()
-	CheckMenu(pos_menuX, pos_menuY)
+	Sleep(3000)
 	CheckCursor(pos_cursor_change_carX, pos_cursor_change_carY)
 	Press_Right()
 	Sleep(50)
@@ -106,12 +105,12 @@ loop {
 	Press_O()
 	Sleep(50)
 	Press_O()
-	CheckMenu(pos_menuX, pos_menuY)
+	Sleep(3000)
 	CheckCursor(pos_cursor_garageX, pos_cursor_garageY)
 	Press_Left()
 	Sleep(50)
 	Press_X()
-	CheckMenu(pos_menuX, pos_menuY)
+	Sleep(3000)
 	CheckCursor(pos_cursor_trophiesX, pos_cursor_trophiesY)
 	Press_Left()
 	Press_X()	
@@ -134,11 +133,10 @@ loop {
 	Sleep(200)
 	Press_O()
 	Sleep(3000)
-	CheckMenu(pos_menuX, pos_menuY)
 	CheckCursor(pos_cursor_cafeX, pos_cursor_cafeY)
 	Press_Right()
 	Press_X()
-	CheckMenu(pos_menuX, pos_menuY)
+	Sleep(3000)
 	CheckCursor(pos_cursor_change_carX, pos_cursor_change_carY)
 	Press_Right()
 	Sleep(50)
@@ -157,7 +155,7 @@ loop {
 	Press_O()
 	Sleep(50)
 	Press_O()
-	CheckMenu(pos_menuX, pos_menuY)
+	Sleep(3000)
 	CheckCursor(pos_cursor_garageX, pos_cursor_garageY)
 	Press_Left()
 }
@@ -183,26 +181,6 @@ Check4Star(x,y, b_size := 1)
 	Sleep(500)
 	Press_X()
     } until 4StarComplete = true
-    return
-}
-
-CheckMenu(x,y, b_size := 1)
-{	
-    Sleep(3000)
-    MenuComplete := false
-    loop 
-	{
-		tc := BitGrab(x, y, b_size)
-		for 	i, c in tc
-		{
-			td := Distance(c, color_menu)
-			if (td < 10 )
-			{
-				MenuComplete := true
-				break
-			}
-		}
-    } until MenuComplete = true
     return
 }
 

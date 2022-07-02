@@ -20,9 +20,6 @@ To configure:
 4. Ensuring that the Remote Play window is the active window by clicking on it, take note of the Mouse's Window Position and Color values as shown in Windows Spy
 5. You will need to use this to idenfity the coordinates and colour values for each of the following positions.
 
-### Menu:
-![menu](screenshots/menu.png)
-
 ### 4star:
 ![4star](screenshots/4-star.png)
 
