@@ -26,19 +26,19 @@ DetectHiddenWindows, Off
 
 Global controller := new ViGEmDS4()
 Global script_start := A_TickCount
-Global color_4star := 0xCBCBCB
-Global color_menu := 0x6A5928
-Global color_cursor := 0xB5B5B5
+Global color_4star := 0xC8C8C8
+Global color_menu := 0x695523
+Global color_cursor := 0xB4B4B4
 Global pos_4starX := 62
-Global pos_4starY := 77
-Global pos_menuX := 334
-Global pos_menuY := 48
-Global pos_cursor_cafeX := 643
+Global pos_4starY := 78
+Global pos_menuX := 336
+Global pos_menuY := 54
+Global pos_cursor_cafeX := 645
 Global pos_cursor_cafeY := 383
-Global pos_cursor_garageX := 865
+Global pos_cursor_garageX := 864
 Global pos_cursor_garageY := 404
-Global pos_cursor_trophiesX := 868
-Global pos_cursor_trophiesY := 641
+Global pos_cursor_trophiesX := 866
+Global pos_cursor_trophiesY := 640
 
 ; Menu
 Menu, tray, Tip, Ticket Bonanza
