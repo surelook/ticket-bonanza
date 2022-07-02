@@ -1,6 +1,6 @@
 # GT7 Ticket Bonanza
 
-## Possible Config
+## Optional Setup
 
 A few pixel checks are performed during the script execution. It may be necessary to adjust the coordinates and colours of these to suit your environment.
 
