@@ -34,3 +34,6 @@ To configure:
 
 ### Cursor Trophies:
 ![cursor-trophies](screenshots/cursor-trophies.png)
+
+### Cursor Change Car:
+![cursor-car](screenshots/cursor-change-car.png)
