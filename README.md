@@ -1,6 +1,14 @@
 # GT7 Ticket Bonanza
 
-## Optional Setup
+## How to Run
+
+1. Install vigem - https://github.com/ViGEm/ViGEmBus/releases/download/setup-v1.17.333/ViGEmBusSetup_x64.msi
+2. Install AutoHotkey - https://www.autohotkey.com/
+3. Install VC All in One https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/
+4. Run GT7-Tickets.ahk
+5. Click Start. 
+
+## Additional Setup for Accurate Pixel Detection
 
 A few pixel checks are performed during the script execution. It may be necessary to adjust the coordinates and colours of these to suit your environment.
 
