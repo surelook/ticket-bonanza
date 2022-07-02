@@ -39,6 +39,8 @@ Global pos_cursor_garageX := 864
 Global pos_cursor_garageY := 404
 Global pos_cursor_trophiesX := 866
 Global pos_cursor_trophiesY := 640
+Global pos_cursor_change_carX := 342
+Global pos_cursor_change_carY := 668
 
 ; Menu
 Menu, tray, Tip, Ticket Bonanza
@@ -86,7 +88,7 @@ loop {
 	Press_Right()
 	Press_X()
 	CheckMenu(pos_menuX, pos_menuY)
-	Sleep(800)
+	CheckCursor(pos_cursor_change_carX, pos_cursor_change_carY)
 	Press_Right()
 	Sleep(50)
 	Press_Right()
@@ -137,7 +139,7 @@ loop {
 	Press_Right()
 	Press_X()
 	CheckMenu(pos_menuX, pos_menuY)
-	Sleep(800)
+	CheckCursor(pos_cursor_change_carX, pos_cursor_change_carY)
 	Press_Right()
 	Sleep(50)
 	Press_Right()
