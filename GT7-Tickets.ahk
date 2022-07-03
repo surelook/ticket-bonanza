@@ -61,7 +61,49 @@ Return
 ButtonTickets:
 gosub, GrabRemotePlay
 Sleep(500)
-loop {
+
+DoTicketBonanza()
+Return
+
+DoTicketBonanza() {
+	try {
+		Do4Star()
+		Do6Star()
+	} catch e {
+		DoRecovery()
+		return
+	}
+	
+	DoTicketBonanza()
+}
+
+DoRecovery() {
+	Press_O()
+	Sleep(500)
+	Press_O()
+	Sleep(500)
+	Press_O()
+	Sleep(500)
+	Press_O()
+	Sleep(500)
+	Press_O()
+	Sleep(500)
+	Press_O()
+	Sleep(500)
+	Press_O()
+	Sleep(500)
+	Press_O()
+	Sleep(500)
+	Press_O()
+	Sleep(500)
+	Press_O()
+	Sleep(500)
+	Sleep(3000)
+	Press_X()
+	Sleep(5000)
+}
+
+Do4Star() {
 	CheckCursor(pos_cursor_cafeX, pos_cursor_cafeY)
 	Press_X()
 	Sleep(3000)
@@ -108,7 +150,10 @@ loop {
 	Sleep(3000)
 	CheckCursor(pos_cursor_garageX, pos_cursor_garageY)
 	Press_Left()
-	Sleep(50)
+}
+
+Do6Star() {
+	CheckCursor(pos_cursor_cafeX, pos_cursor_cafeY)
 	Press_X()
 	Sleep(3000)
 	CheckCursor(pos_cursor_trophiesX, pos_cursor_trophiesY)
@@ -159,7 +204,6 @@ loop {
 	CheckCursor(pos_cursor_garageX, pos_cursor_garageY)
 	Press_Left()
 }
-Return
 
 
 Check4Star(x,y, b_size := 1)
@@ -186,6 +230,7 @@ Check4Star(x,y, b_size := 1)
 
 CheckCursor(x,y, b_size := 1)
 {	
+	throw exception("Problem detecting pixel")
     CursorComplete := false
     loop 
 	{
