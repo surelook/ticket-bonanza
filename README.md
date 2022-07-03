@@ -1,5 +1,7 @@
 # GT7 Ticket Bonanza
 
+You can download the zip of the [lastest release here](https://github.com/surelook/ticket-bonanza/releases/latest).
+
 ## How to Run
 
 1. Install vigem - https://github.com/ViGEm/ViGEmBus/releases/download/setup-v1.17.333/ViGEmBusSetup_x64.msi
