@@ -164,7 +164,7 @@ Return
 
 Check4Star(x,y, b_size := 1)
 {	
-	Sleep(2500)
+	Sleep(13500)
     4StarComplete := false
     loop 
 	{
